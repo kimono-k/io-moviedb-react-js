@@ -10,9 +10,6 @@ const Favorites = () => {
 
   console.log(favoriteMovies[0]);
 
-  // If the movie is a favorite in localStorage then show it on the page - done!
-  // TODO: De film data kan aangepast worden door op edit te drukken. Deze functie veranderd de data in de global storage.
-
   return (
     <div>
       <ul
