@@ -1,12 +1,12 @@
-import React from 'react';
-import { Routes, Route, BrowserRouter } from 'react-router-dom';
-import Home from './routes/Home';
-import Detail from './routes/Detail';
-import Favorites from './routes/Favorites';
-import Edit from './routes/Edit';
-import HeaderTitle from './components/HeaderTitle';
-import SearchContextComponent from './components/SearchContextComponent';
-import { SearchProvider } from './hooks/SearchProvider';
+import React from "react";
+import { Routes, Route, BrowserRouter } from "react-router-dom";
+import Home from "./routes/Home";
+import Detail from "./routes/Detail";
+import Favorites from "./routes/Favorites";
+import Edit from "./routes/Edit";
+import HeaderTitle from "./components/HeaderTitle";
+import SearchContextComponent from "./components/SearchContextComponent";
+import { SearchProvider } from "./hooks/SearchProvider";
 
 const App = () => {
   return (
@@ -59,7 +59,7 @@ const App = () => {
                   <Route path="/" element={<Home />} />
                   <Route path="/detail/:id" element={<Detail />} />
                   <Route path="/favorites" element={<Favorites />} />
-                  <Route path="/edit" element={<Edit />} />
+                  <Route path="/edit/:id" element={<Edit />} />
                 </Routes>
               </main>
             </div>

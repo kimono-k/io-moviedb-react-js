@@ -1,5 +1,5 @@
-import React from 'react';
-import { useSearchData } from '../hooks/SearchProvider';
+import React from "react";
+import { useSearchData } from "../hooks/SearchProvider";
 
 const SearchContextComponent = () => {
   const { search, navigateHandler } = useSearchData();
